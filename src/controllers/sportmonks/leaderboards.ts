@@ -44,7 +44,7 @@ export const getBoardsBsedOnEventType = async (req: Request, res: Response) => {
             ? playerPosition.split(',')
             : [];
 
-    console.log(playerPositionArr);
+    //console.log(playerPositionArr);
 
     if (eventsTypeArr.some(Number.isNaN)) {
         throw httpError(400, 'eventsType musí být seznam čísel');

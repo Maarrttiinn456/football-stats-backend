@@ -7,6 +7,7 @@ export const leaderboardStatsBySeasonsAndTeams = async (
     positionOpt: string[] = [],
     metrics: number[] = []
 ): Promise<TeamSquadItem[]> => {
+    //ziskam soupisku hracu ze vsech tymu ze sezony
     const responses = await Promise.all(
         teamsId.map((teamId) =>
             fetachTeamSquadBySeasonAndTeamId(seasonId, teamId)

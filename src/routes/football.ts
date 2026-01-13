@@ -44,7 +44,7 @@ footballRouter.get('/seasons/:seasonId/standings', getSeasonStandings);
 footballRouter.get('/seasons/:seasonId/highlights', getSeasonHighlights);
 
 //Pomocí typeIds mohi specifikovat jaké statistiky budu tahat. Obvykle budu tahat více než jednu
-footballRouter.get('/seasons/:seasonId/team/stats', getSeasonTeamStats);
+footballRouter.get('/seasons/:seasonId/teams/stats', getSeasonTeamStats);
 
 //Pomocí ?scope='...' budu řídit jakou sortu zápasů dostanu
 footballRouter.get('/seasons/:seasonId/fixtures', getSeasonFixtures);
