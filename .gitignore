@@ -7,3 +7,7 @@ dist/
 # environment variables
 .env
 .env.*
+
+
+echo ".env" >> .gitignore
+echo ".env.*" >> .gitignore
